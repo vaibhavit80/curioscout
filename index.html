@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>CurioScout: Play & Learn Academy - Educational Games</title>
+    <meta name="description" content="Engaging, kid-friendly educational mini games suite including Code-a-Bot, Chrono-Clock, Junior Market, Math Galaxy, Safari Phonics, Memory Match, and more!">
+    
+    <!-- Google Fonts for Kids -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700;800;900&family=Quicksand:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Application Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Ambient Background Bubbles -->
+    <div class="bg-ambient-bubbles">
+        <div class="ambient-bubble b1"></div>
+        <div class="ambient-bubble b2"></div>
+        <div class="ambient-bubble b3"></div>
+    </div>
+
+    <div id="app">
+        <!-- Top Navigation Header -->
+        <header class="wonder-header">
+            <div class="brand-section" onclick="window.app && window.app.showHub()">
+                <span class="brand-mascot">🧭</span>
+                <span class="brand-title">CurioScout</span>
+                <span class="child-badge" id="profile-name-tag">Curio Scout</span>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Stars Balance -->
+                <div class="star-bank-pill" id="nav-star-display" title="Your Star Power">
+                    ⭐ <span id="header-stars-count">0</span>
+                </div>
+
+                <!-- Scout AI Copilot -->
+                <button class="nav-icon-btn ai-copilot-nav-btn" id="nav-scout-ai-btn" title="Ask Scout AI">
+                    <span>🤖</span>
+                    <span>Scout AI</span>
+                </button>
+
+                <!-- Sticker Book & Trophy Room -->
+                <button class="nav-icon-btn" id="nav-stickers-btn" title="Sticker Book & Trophies">
+                    <span>🏆</span>
+                    <span>Stickers</span>
+                </button>
+
+                <!-- Parent & Teacher Report -->
+                <button class="nav-icon-btn" id="nav-parent-btn" title="Parent & Educator Report">
+                    <span>👨‍👩‍👧</span>
+                    <span>Parents</span>
+                </button>
+
+                <!-- Audio Toggles -->
+                <button class="nav-icon-btn circle-btn" id="sound-toggle-btn" title="Sound Effects On/Off">
+                    🔊
+                </button>
+                <button class="nav-icon-btn circle-btn" id="speech-toggle-btn" title="Voice Narration On/Off">
+                    🗣️
+                </button>
+
+                <!-- Settings -->
+                <button class="nav-icon-btn circle-btn" id="nav-settings-btn" title="Settings & Age Selection">
+                    ⚙️
+                </button>
+
+                <!-- Fullscreen (great for tablets/kids) -->
+                <button class="nav-icon-btn circle-btn" id="fullscreen-btn" title="Fullscreen Mode">
+                    ⛶
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hub Home Screen -->
+            <section id="hub-view">
+                <div class="hub-hero">
+                    <span class="hero-welcome-badge" id="profile-age-tag">Ages 6-8 (Explorer)</span>
+                    <h1 class="hero-heading">What would you like to explore today?</h1>
+                    <p class="hero-subtext">Choose an educational adventure below to practice numbers, spelling, memory, logic, nature, music, and art!</p>
+                </div>
+
+                <!-- Games Grid Cards -->
+                <div class="games-grid" id="games-grid">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </section>
+
+            <!-- Active Mini Game Screen -->
+            <section id="game-view" class="hidden">
+                <!-- Active Game Board loaded here -->
+            </section>
+        </main>
+    </div>
+
+    <!-- Modals Container (Sticker Book, Settings, Parent Report, Scout AI) -->
+    <div id="modal-container" class="hidden"></div>
+
+    <!-- Core Scripts -->
+    <script src="js/audio.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/state.js"></script>
+    <script src="js/ai-engine.js"></script>
+
+    <!-- Mini Game Modules -->
+    <script src="js/games/math.js"></script>
+    <script src="js/games/spelling.js"></script>
+    <script src="js/games/memory.js"></script>
+    <script src="js/games/shapes.js"></script>
+    <script src="js/games/habitats.js"></script>
+    <script src="js/games/music.js"></script>
+    <script src="js/games/doodle.js"></script>
+    <script src="js/games/codebot.js"></script>
+    <script src="js/games/clock.js"></script>
+    <script src="js/games/market.js"></script>
+    <script src="js/games/ai-sketch.js"></script>
+    <script src="js/games/ai-story.js"></script>
+    <script src="js/games/ai-emotion.js"></script>
+    <script src="js/games/ai-pattern.js"></script>
+    <script src="js/games/tangram.js"></script>
+
+    <!-- Master Controller -->
+    <script src="js/app.js"></script>
+</body>
+</html>
