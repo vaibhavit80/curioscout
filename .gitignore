@@ -16,3 +16,11 @@ npm-debug.log*
 .idea/
 *.sublime-project
 *.sublime-workspace
+
+# Build outputs
+*.apk
+*.zip
+.gradle/
+build/
+android/app/build/
+
