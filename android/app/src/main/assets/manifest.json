@@ -1,0 +1,25 @@
+{
+  "name": "CurioScout: Play & Learn Academy",
+  "short_name": "CurioScout",
+  "description": "Interactive educational mini-games for kids powered by in-browser Scout AI copilot.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "orientation": "landscape",
+  "background_color": "#F8FAFC",
+  "theme_color": "#4F46E5",
+  "categories": ["education", "kids", "games"],
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
